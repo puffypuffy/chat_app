@@ -4,7 +4,7 @@ import { addOne, minusOne, addOneAsync } from './index.redux.js'
 
 
 @connect (
-  state => ({num:state}),
+  state => ({num:state.counter}),
   {addOne, minusOne, addOneAsync}
 )
 class App extends React.Component {
